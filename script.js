@@ -1,37 +1,29 @@
-// let b = "Текст из script.js";
-// console.log(b);
+const link = document.getElementById('super_link');
+console.log(link);
 
-// let num = "123";
-// console.log(num);
+const card1 = document.querySelectorAll('.card-link');
+for (let index = 0; index < card1.length; index++) {
+    card1[index].textContent = 'ссылка моя';
+}
 
-// let a = 5;
-// a = 7;
-// console.log(a);
+const cardBody = document.querySelectorAll('.card-body .card-link');
+console.log(cardBody);
 
-// let e = 1+2+3;
-// console.log(e);
+const findAtt = document.querySelector('[data-number = "50"]');
+console.log(findAtt);
 
-// let c = 10;
-// let f = 2;
-// let sum = c+f;
-// let dif = c-f;
-// let mult = c*f;
-// let div = c/f;
-// console.log(sum, dif, mult, div);
-// console.log(sum+dif+mult+div);
+const title = document.querySelector('title');
+console.log(title);
 
-// let age = prompt ("Ваш возраст?",18);
-// console.log(`Вам ${age} лет`);
+const cardTitle = document.querySelector('.card-title');
+console.log(cardTitle.parentElement);
 
+const paragrph = document.createElement('p');
+paragrph.textContent = 'Привет';
+const card2 = document.querySelector('.card').prepend(paragrph);
 
-// let a =Number( prompt("введите первое число: ",0));
-// let b =Number( prompt("введите второе число: ",0));
-// let sum = a+b;
-// let dif = a-b;
-// let mult = a*b;
-// let div = a/b;
-// let rest = a%b;
-// console.log(sum, dif, mult, div, rest);
+const del = document.querySelector('h6');
+del.remove();
 
 
 
